@@ -120,6 +120,7 @@ function extractError(err: unknown): string {
 
 <template>
   <main class="wrap">
+    <p class="nav"><NuxtLink to="/photos">Photos →</NuxtLink></p>
 
     <section class="card">
       <h2>Create user</h2>
@@ -172,6 +173,8 @@ function extractError(err: unknown): string {
 
 <style scoped>
 .wrap { max-width: 720px; margin: 2rem auto; padding: 0 1rem; font-family: system-ui, sans-serif; }
+.nav { margin-bottom: 1rem; }
+.nav a { color: #06c; text-decoration: none; }
 .card { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; }
 .form { display: grid; gap: 0.5rem; }
 .form label { display: grid; gap: 0.25rem; font-size: 0.9rem; }

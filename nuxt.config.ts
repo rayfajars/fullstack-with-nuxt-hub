@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxthub/core'],
   hub: {
-    db: 'postgresql'
+    db: 'postgresql',
+    blob: true,
   }
 
 })
